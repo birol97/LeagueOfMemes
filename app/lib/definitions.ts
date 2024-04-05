@@ -1,6 +1,9 @@
 // This file contains type definitions for your data.
 // It describes the shape of the data, and what data type each property should accept.
 // For simplicity of teaching, we're manually defining these types.
+
+import internal from "stream";
+
 // However, these types are generated automatically if you're using an ORM such as Prisma.
 export type User = {
   id: string;
@@ -86,3 +89,23 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+
+export type Memecoin = {
+
+ id: string;
+ memecoin: string;
+ MarketCap: number;
+ Price: number;
+ tier: 'tier-1' | 'tier-2' | 'tier-3'| 'tier-4';
+ liqudity:number;
+ address:number; 
+};
+
+
+export type Wallet = {
+id: string;
+connectedcoinid : number; 
+amount_liqudity : number;
+public_address : number;
+}

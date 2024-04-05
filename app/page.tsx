@@ -1,56 +1,65 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import styles from '@/app/ui/home.module.css';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import Image from 'next/image';
-
-import { lusitana  } from '@/app/ui/fonts';
+import TournamentBracket from '@/app/ui/tournament/tournament_bracket';
+import AcmeLogo from '@/app/ui/acme-logo'; // Assuming this is a React component for your 
+import Head from 'next/head';
+import React  from 'react';
+import Countdown from '@/app/ui/tournament/countdown'
 
 export default function Page() {
+  
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-      <AcmeLogo />
-        {/* <AcmeLogo /> */}
+  
+    <div className="flex flex-col min-h-screen bg-gray-800">
+    {/* Main Content */}
+    <section id="section2" className="relative min-h-screen flex justify-center items-center">
+      {/* Background Image */}
+      <Image src="/background.webp" alt="Background" layout="fill" objectFit="cover" quality={100} className="z-0" />
+  
+      {/* Navigation Buttons (and logo) Container with Wrap */}
+      <div className="absolute top-4 z-10 flex flex-wrap justify-center gap-4">
+        {/* Logo */}
+        <div className="flex-shrink-0">
+          <AcmeLogo />
+        </div>
+        
+        {/* Navigation Buttons */}
+        <a href="#section4" className="bg-custom-blue text-white rounded-full shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+        <a href="#section4" className="bg-custom-blue text-white rounded-full shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+        <a href="#section4" className="bg-custom-blue text-white rounded-full shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+        <a href="#section4" className="bg-custom-blue text-white rounded-full shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+        
+        {/* Last Navigation Button Centered */}
+        <div className="w-full flex justify-center">
+          <a href="#section4" className="bg-custom-blue text-white rounded-md shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+        </div>
       </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-        <div
-  className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
-/>
-        <div className={styles.shape} />
+    </section>
 
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
-        </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-        <Image
-        src="/hero-desktop.png"
-        width={1000}
-        height={760}
-        className="hidden md:block"
-        alt="Screenshots of the dashboard project showing desktop version"
-      />
-            <Image
-        src="/hero-desktop.png"
-        width={560}
-        height={620}
-        className="block md:hidden"
-        alt="Screenshots of the dashboard project showing desktop version"
-      />
-        </div>
+
+      {/* Additional Sections */}
+      <section id="section3" className="min-h-screen flex justify-center items-center bg-gray-300">
+        Section 3 Content
+      </section>
+
+      <section id="section4" className="min-h-screen flex justify-center items-center bg-gray-400">
+        Section 4 Content
+      </section>
+
+      {/* Tournament Bracket and Images Section */}
+      <div className="flex flex-col md:flex-row flex-1">
+        <section id="tournamentBracket" className="w-full md:w-1/2 flex justify-center items-center p-4">
+          <TournamentBracket />
+        </section>
+
+        <section id="images" className="bg-gray-200 flex justify-center items-center p-4">
+          <Image src="/path-to-your-image.jpg" alt="Image Description" width={500} height={300} layout="intrinsic" />
+        </section>
       </div>
-    </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white p-4">
+        Footer Content
+      </footer>
+    </div>
   );
 }

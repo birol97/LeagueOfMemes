@@ -58,7 +58,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white p-4">
-        Footer Content
+        Footer    Content
       </footer>
     </div>
   );

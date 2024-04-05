@@ -30,7 +30,7 @@ export default function Page() {
         
         {/* Last Navigation Button Centered */}
         <div className="w-full flex justify-center">
-          <a href="#section4" className="bg-custom-blue text-white rounded-md shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}>Section 4</a>
+          <a href="#section4" className="bg-custom-blue text-white rounded-md shadow font-bold leading-tight inline-block no-underline hover:bg-blue-800 transition-colors duration-300 text-lg w-32 h-12 flex items-center justify-center" style={{ fontFamily: "'Permanent Marker', cursive" }}><Countdown/></a>
         </div>
       </div>
     </section>

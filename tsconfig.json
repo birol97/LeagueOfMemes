@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-  ],
+, "app/ui/section3/gettingstarted.jsx", "app/ui/section1/section.jsx", "app/ui/section1/navelement.jsx"  ],
   "exclude": ["node_modules"]
 }

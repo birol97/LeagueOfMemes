@@ -21,7 +21,8 @@ const config: Config = {
           600: '#2F6FEB',
         
         },
-        'custom-blue': '#124867'
+        'custom-blue': '#1486c8',
+        'custom-blue2': '#0083ce',
       },
     },
     keyframes: {

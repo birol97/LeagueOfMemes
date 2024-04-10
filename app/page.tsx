@@ -6,7 +6,8 @@ import React  from 'react';
 import Countdown from '@/app/ui/tournament/countdown'
 import Navbar from '@/app/ui/section1/navbar'
 import WhatIsLeagueofmemes from'@/app/ui/section2/whatisleagueofmeme'
-import Gettingstarted from '@/app/ui/section3/gettingstarted'
+import Gettingstarted from '@/app/ui/section3/main_layour'
+//import Gettingstarted1 from '@/app/ui/section5/tournament'
 export default function Page() {
   
   return (
@@ -33,14 +34,14 @@ export default function Page() {
 
      
    
-    <section>
-    <WhatIsLeagueofmemes/>
-</section>
+      <section>
+ 
+<div className='relative'>
+<WhatIsLeagueofmemes/>
+
 <Gettingstarted/>
-<section>
-
+</div>
 </section>
-
 <section>
 
 </section>

@@ -17,9 +17,7 @@ input[type='number']::-webkit-outer-spin-button {
   margin: 0;
 }
 /* In global.css or another global stylesheet */
-body {
-  background-color: #0083ce;
-}
+
 
 p {
   font-family: "Comic Neue", cursive !important;
@@ -29,3 +27,5 @@ section{
   background-color: #ffffff;
 
 }
+
+

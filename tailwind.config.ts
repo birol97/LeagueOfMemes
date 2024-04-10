@@ -23,6 +23,8 @@ const config: Config = {
         },
         'custom-blue': '#1486c8',
         'custom-blue2': '#0083ce',
+        'custom-grey': '#182029',
+        'custom-green': '#68fb9a',
       },
     },
     keyframes: {
